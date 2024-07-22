@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href="index.html"><img src="asset/logo-white.png" class="putih" /></a>
+          <a href="index.html"><img src="asset/logo-black.png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#aboutus">About</a></li>
+            <li><a href="index.html#support">Support</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#tour-packages">Tour</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header id="home">
+      </header>
+      <main>
+        <section id="booking-form">
+          <div class="layar-dalam">
+            <h3>Booking Form</h3>
+            <form action="submit_booking.php" method="post">
+              <label for="name"><i class="fas fa-user"></i> Name:</label>
+              <input type="text" id="name" name="name" required /><br />
+
+              <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+              <input type="email" id="email" name="email" required 
+                placeholder="example@domain.com" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                title="Please enter a valid email address, e.g., example@domain.com" /><br />
+
+              <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+              <input type="text" id="phone" name="phone" required /><br />
+
+              <label for="gender"><i class="fas fa-venus-mars"></i> Gender:</label>
+              <input type="radio" id="male" name="gender" value="male" required />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" required />
+              <label for="female">Female</label><br />
+
+              <label for="package"><i class="fas fa-briefcase"></i> Select Package:</label>
+              <select id="package" name="package">
+                <option value="adventure">Paket Petualangan Bali</option>
+                <option value="beach">Paket Santai di Pantai</option>
+                <option value="culture">Paket Budaya Bali</option>
+                <option value="family">Paket Keluarga Seru</option>
+                <option value="sea">Paket Petualangan Laut</option>
+                <option value="birthday">Paket Perayaan Ulang Tahun</option>
+              </select><br />
+
+              <label for="start-date"><i class="fas fa-calendar-alt"></i> Start Date:</label>
+              <input type="date" id="start-date" name="start_date" required /><br />
+
+              <label for="end-date"><i class="fas fa-calendar-alt"></i> End Date:</label>
+              <input type="date" id="end-date" name="end_date" required /><br />
+
+              <label for="participants"><i class="fas fa-users"></i> Number of Participants:</label>
+              <input type="number" id="participants" name="participants" required /><br />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="layar-dalam">
+          <div>
+            <h5>Info</h5>
+            Bali
+          </div>
+          <div>
+            <h5>Contact</h5>
+            @travel instagram
+          </div>
+          <div>
+            <h5>Help</h5>
+            911
+          </div>
+          <div>
+            <h5>Sitemap</h5>
+            Bali
+          </div>
+        </div>
+        <div class="layar-dalam">
+          <div class="copyright">&copy; 2024 Travelling Indonesia</div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
